@@ -45,8 +45,10 @@ function removeItem(e) {
 
 function clearTasks(e) {
   //taskList.innerHTML = '';
-  while (taskList.firstChild) {
-    taskList.removeChild(taskList.firstChild);
+  if (confirm('Are you sure??')) {
+    while (taskList.firstChild) {
+      taskList.removeChild(taskList.firstChild);
+    }
   }
 }
 
